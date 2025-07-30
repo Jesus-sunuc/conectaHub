@@ -3,15 +3,16 @@ import { ThemeSelector } from "./theme/ThemeSelector";
 
 export const NavBar = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-light-subtle">
       <nav className="navbar navbar-expand-lg navbar-dark container">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">
             <img
               className="img-fluid"
+              style={{ maxHeight: "40px" }}
               id="navbar-logo"
-              alt="Snow College Logo"
-              src="/SnowCollegeLogo.png"
+              alt="ConectaHub Logo"
+              src="/ConectaHubLogo.png"
             />
           </Link>
           <div className="text-white ps-2 pe-2 my-md-auto ml-auto me-2">
