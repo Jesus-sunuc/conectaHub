@@ -1,10 +1,19 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import { Toaster } from "react-hot-toast";
+import { NavBar } from "./components/NavBar";
 
 function App() {
   return (
     <>
+      <Toaster />
+      <NavBar />
       <div className="container">
-        <h1>Hola</h1>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
     </>
   );
