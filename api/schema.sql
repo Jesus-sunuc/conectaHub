@@ -1,5 +1,3 @@
--- ConectaHub Database Schema - Cleaned Version
-
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     fb_uid VARCHAR(255) UNIQUE,

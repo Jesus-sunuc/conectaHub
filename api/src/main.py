@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+from src.router import category_router
 
 load_dotenv()
 
@@ -19,5 +20,6 @@ router = APIRouter(prefix="/api")
 def health_check():
     return True
 
+router.include_router(category_router.router)
 
 app.include_router(router)
