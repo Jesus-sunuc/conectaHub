@@ -1,10 +1,12 @@
+import Carousel from "../components/Carousel";
+
 const Home = () => {
+  const images = ["./img1.jpg", "./img2.jpg", "./img3.jpg"];
+
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
+    <div className="container mt-4">
+      <Carousel id="homeCarousel" images={images} height="250px" />
     </div>
   );
 };
-
 export default Home;
