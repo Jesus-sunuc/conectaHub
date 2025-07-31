@@ -3,7 +3,7 @@ import { ThemeSelector } from "./theme/ThemeSelector";
 
 export const NavBar = () => {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary-600">
       <nav className="navbar navbar-expand-lg navbar-dark container">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand">

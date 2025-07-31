@@ -1,53 +1,53 @@
-$badger-blue-100: hsl(221, 20%, 97%);  /* #F6F7F9 */
-$badger-blue-200: hsl(221, 25%, 90%);  /* #DFE3EC */
-$badger-blue-300: hsl(221, 35%, 75%);  /* #A9B7D6 */
-$badger-blue-400: hsl(221, 45%, 60%);  /* #6B88C7 */
-$badger-blue:       #3795BD; /* #1E376C */
-$badger-blue-600:   hsl(221, 60%, 22%); /* #162C5A */
-$badger-blue-700:   hsl(221, 65%, 16%); /* #0E1F43 */
-$badger-blue-800:   hsl(221, 70%, 10%); /* #081329 */
-$badger-blue-900:   hsl(221, 75%, 5%);  /* #030916 */
+$conecta-blue-100: hsl(198, 20%, 97%);  /* #F6F7F9 */
+$conecta-blue-200: hsl(198, 25%, 90%);  /* #DFE3EC */
+$conecta-blue-300: hsl(198, 35%, 75%);  /* #A9B7D6 */
+$conecta-blue-400: hsl(198, 45%, 60%);  /* #6B88C7 */
+$conecta-blue:       hsl(198, 55%, 48%); /* #1E376C */
+$conecta-blue-600:   hsl(198, 60%, 22%); /* #162C5A */
+$conecta-blue-700:   hsl(198, 65%, 16%); /* #0E1F43 */
+$conecta-blue-800:   hsl(198, 70%, 10%); /* #081329 */
+$conecta-blue-900:   hsl(198, 75%, 5%);  /* #030916 */
 
-$badger-orange-100: hsl(25.2, 83%, 91%);   /* #FBE5D5 */
-$badger-orange-200: hsl(25.2, 92%, 79%);   /* #FBC298 */
-$badger-orange-300: hsl(35, 95%, 59%);   /* #FAA634 */
-$badger-orange-400: hsl(25.2, 95.2%, 59.2%); /* #FA8734 */
-$badger-orange:     hsl(25.2, 90.6%, 54.1%); /* #F47920 */
-$badger-orange-600: hsl(25.2, 76.9%, 45.9%); /* #CF671B */
-$badger-orange-700: hsl(25.2, 76.7%, 35.3%); /* #9F4F15 */
-$badger-orange-800: hsl(25.2, 77.4%, 24.3%); /* #6E360E */
-$badger-orange-900: hsl(25.2, 76.8%, 13.5%); /* #3D1E08 */
+$conecta-orange-100: hsl(25.2, 83%, 91%);   /* #FBE5D5 */
+$conecta-orange-200: hsl(25.2, 92%, 79%);   /* #FBC298 */
+$conecta-orange-300: hsl(35, 95%, 59%);   /* #FAA634 */
+$conecta-orange-400: hsl(25.2, 95.2%, 59.2%); /* #FA8734 */
+$conecta-orange:     hsl(25.2, 90.6%, 54.1%); /* #F47920 */
+$conecta-orange-600: hsl(25.2, 76.9%, 45.9%); /* #CF671B */
+$conecta-orange-700: hsl(25.2, 76.7%, 35.3%); /* #9F4F15 */
+$conecta-orange-800: hsl(25.2, 77.4%, 24.3%); /* #6E360E */
+$conecta-orange-900: hsl(25.2, 76.8%, 13.5%); /* #3D1E08 */
 
-$badger-gray: #939598;
+$conecta-gray: #939598;
 $danger-light: #f44336;
 $info-dark: #0097a7;
 
-$primary: $badger-blue;
+$primary: $conecta-blue;
 $min-contrast-ratio: 2.7; //accessibility concerns? defaults to 4.5
 
 $headings-font-family: "MuseoSans", sans-serif;
 
 @import "./bootstrap-color-initialization.scss";
 $theme-colors: (
-  "primary-100": $badger-blue-100,
-  "primary-200": $badger-blue-200,
-  "primary-300": $badger-blue-300,
-  "primary-400": $badger-blue-400,
+  "primary-100": $conecta-blue-100,
+  "primary-200": $conecta-blue-200,
+  "primary-300": $conecta-blue-300,
+  "primary-400": $conecta-blue-400,
   "primary": $primary,
-  "primary-600": $badger-blue-600,
-  "primary-700": $badger-blue-700,
-  "primary-800": $badger-blue-800,
-  "primary-900": $badger-blue-900,
-  "bold-100": $badger-orange-100,
-  "bold-200": $badger-orange-200,
-  "bold-300": $badger-orange-300,
-  "bold-400": $badger-orange-400,
-  "bold": $badger-orange,
-  "bold-600": $badger-orange-600,
-  "bold-700": $badger-orange-700,
-  "bold-800": $badger-orange-800,
-  "bold-900": $badger-orange-900,
-  "badger-gray": $badger-gray,
+  "primary-600": $conecta-blue-600,
+  "primary-700": $conecta-blue-700,
+  "primary-800": $conecta-blue-800,
+  "primary-900": $conecta-blue-900,
+  "bold-100": $conecta-orange-100,
+  "bold-200": $conecta-orange-200,
+  "bold-300": $conecta-orange-300,
+  "bold-400": $conecta-orange-400,
+  "bold": $conecta-orange,
+  "bold-600": $conecta-orange-600,
+  "bold-700": $conecta-orange-700,
+  "bold-800": $conecta-orange-800,
+  "bold-900": $conecta-orange-900,
+  "conecta-gray": $conecta-gray,
   "secondary": $secondary,
   "success": $success,
   "info": $info,
@@ -136,13 +136,13 @@ $theme-colors: (
   text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
-.badger-gradient {
+.conecta-gradient {
   transition: background 0.3s ease-in-out;
-  background: linear-gradient(45deg, $primary, $primary 60%, $badger-orange 95%);
+  background: linear-gradient(45deg, $primary, $primary 60%, $conecta-orange 95%);
 }
 
-.badger-gradient:hover {
-  background: linear-gradient(45deg, darken($primary, 5%), darken($primary, 5%) 60%, lighten($badger-orange, 5%) 95%);
+.conecta-gradient:hover {
+  background: linear-gradient(45deg, darken($primary, 5%), darken($primary, 5%) 60%, lighten($conecta-orange, 5%) 95%);
 }
 
 @media print {
