@@ -47,6 +47,16 @@ services:
     working_dir: /app
     environment:
       - TZ=America/Denver
+      - PG_USER=ConectaHubUser
+      - PG_PASSWORD=fasdouifewlfv
+      - PG_HOST=conectaHub_db
+      - PG_DB=ConectaHub
+    env_file:
+      - .env
+    depends_on:
+      - concert_db
+    ports:
+      - 8000:8000
     command: >
       sh -c "
         #rm -rf /home/developer/virtualenv
