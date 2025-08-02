@@ -3,5 +3,5 @@ from src.models.categories import CategoryBase
 
 class CategoryRepository:
     def get_all_categories(self):
-        query = "select * from business_categories"
-        return run_sql(query, output_class=CategoryBase)
+        sql = "select * from business_categories"
+        return run_sql(sql, output_class=CategoryBase)
