@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
-from src.router import category_router
-
 load_dotenv()
+
+from src.router import category_router
 
 import logging
 from fastapi import FastAPI, APIRouter

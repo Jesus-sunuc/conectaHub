@@ -1,3 +1,13 @@
+-- psql -U $POSTGRES_USER $POSTGRES_DB
+
+drop table if exists users cascade;
+drop table if exists business_categories cascade;
+drop table if exists business_profiles cascade;
+drop table if exists business_social_links cascade;
+drop table if exists announcements cascade;
+drop table if exists announcement_replies cascade;
+drop table if exists announcement_reactions cascade;
+
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     fb_uid VARCHAR(255) UNIQUE,
